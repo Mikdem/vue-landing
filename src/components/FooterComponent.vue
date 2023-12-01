@@ -1,6 +1,7 @@
 <template>
-<footer class="bg-[url('../assets/foot-bg.jpg')] bg-cover py-10 md:pl-24 md:pr-60 text-[#555555] font-poppins">
-  <div class="px-0 md:px-6 flex flex-col md:flex-row justify-around">
+<footer class="bg-[url('../assets/foot-bg.jpg')] bg-cover py-10 text-[#555555] font-poppins">
+  <div class="md:pl-24 md:pr-60">
+  <div class="px-0 md:px-6 flex flex-col md:flex-row justify-around pb-4">
     <div class="px-4 pb-4">
       <img src="../assets/MMCYTech.png" class="w-80 md:w-50 pb-6">
       <p>Follow us on social media to get the latest news and updates</p>
@@ -59,6 +60,10 @@
         </li>
       </ul>
     </div>
+  </div>
+</div>
+  <div class="border-t-darkerGrey border-t-[0.5px]"> 
+    <p class="text-center pt-4">© 2021 MMCY Tech. All Rights Reserved. <a href="https://talent.mmcytech.com/privacy/" class="text-orangePrimary hover:text-orangePrimary"> Privacy Policy,</a> <a href="https://talent.mmcytech.com/terms-and-conditions/" class="text-orangePrimary hover:text-orangePrimary"> Terms & Conditions</a></p>
   </div>
 </footer>
 </template>

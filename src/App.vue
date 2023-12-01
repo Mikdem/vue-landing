@@ -1,69 +1,7 @@
 <template>
-<!-- <div class="bg-[url('../assets/Talent-Banner3.png')] md:bg-left-top bg-center">
-     Banner header
-    <header class=" text-white text-center py-8 h-full space-y-4 justify-items-end">
-      <div class="px-4 py-40 md:pt-80 md:pl-96 md:pb-24 md:pr-4 ">
-        <h1 class="md:text-[80px] text-[50px] font-bold">Apply Now</h1>
-        <p class="text-xl mb-4 pt-2">Take your Career to New Heights</p>
-        <button class="bg-orangePrimary text-white md:text-[20px] text-[30px] font-bold font-poppins py-4 px-6 hover:bg-opacity-90 transition duration-300">
-          Join us
-        </button>
-      </div>
-    </header>
-</div> -->
 <NavigationBar/>
 <router-view/>
 <FooterComponent/>
-<!-- <footer class="bg-[url('../assets/foot-bg.jpg')] bg-cover py-10 md:pl-24 md:pr-60 text-[#555555] font-poppins">
-  <div class="px-0 md:px-6 flex flex-col md:flex-row justify-around">
-    <div class="px-4 pb-4">
-      <img src="../src/assets/MMCYTech.png" class="w-80 md:w-50 pb-6">
-      <p>Follow us on social media to get the latest news and updates</p>
-    </div>
-    <div class="px-4 py-2 text-[#555555]">
-      <h1 class="text-[20px] font-bold pb-4">CONTACT INFO</h1>
-      <ul class="font-[14px]">
-        <li class="pb-4">
-          <i class="fa fa-map-o text-orangePrimary pt-2 font-black text-xl"></i>
-            <b class="pl-4">Addis Office</b>
-          <p class="pl-10">
-            Kasanchis, next to Jupiter Hotel Bloomtech bldg, 11th floor<br>
-            Addis Ababa, Ethiopia
-          </p>
-        </li>
-        <li class="pb-4">
-          <i class="fa fa-phone text-orangePrimary pt-2 font-black text-xl"></i>
-          <a href="tel:+251-903-731-001" target="blank" class="pl-4">+251-903-731-001</a>
-        </li>
-        <li class="pb-4">
-          <i class="fa fa-envelope-o text-orangePrimary pt-2 font-black text-xl"></i>
-          <a href="mailto:talent@mmcytech.com" class="pt-4 pl-4">talent@mmcytech.com</a>
-        </li>
-      </ul>
-    </div>
-    <div class="px-4 py-2 text-[#555555]">
-      <h1 class="text-[20px] font-bold pb-4">INFORMATION</h1>
-      <ul>
-        <li class="flex flex-row">
-          <i class="fa fa-chevron-right text-orangePrimary pt-2 font-black text-sm"></i>
-          <a href="/" class="block py-2 pl-2 items-start text-sm">Home</a>
-        </li>
-        <li class="flex flex-row">
-          <i class="fa fa-chevron-right text-orangePrimary pt-2 font-black text-sm"></i>
-          <a href="/about" class="block py-2 pl-2 items-start text-sm">Jobs</a>
-        </li>
-        <li class="flex flex-row">
-          <i class="fa fa-chevron-right text-orangePrimary pt-2 font-black text-sm"></i>
-          <a href="/login" class="block py-2 pl-2 items-start text-sm">Login</a>
-        </li>
-        <li class="flex flex-row">
-          <i class="fa fa-chevron-right text-orangePrimary pt-2 font-black text-sm"></i>
-          <a href="/register" class="block py-2 pl-2 items-start text-sm">Register</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</footer> -->
 </template>
 
 <script>
@@ -74,47 +12,5 @@ export default {
     NavigationBar,
     FooterComponent,
   },
-  // data() {
-  //   return {
-  //     scrolled: false,
-  //     isMobileMenuOpen: false
-  //   };
-  // },
-  // mounted() {
-  //   window.addEventListener('scroll', this.handleScroll);
-  // },
-  // destroyed() {
-  //   window.removeEventListener('scroll', this.handleScroll);
-  // },
-  // methods: {
-  //   handleScroll() {
-  //     if (window.scrollY > 50) {
-  //       this.scrolled = true;
-  //     } else {
-  //       this.scrolled = false;
-  //     }
-  //   },
-  //   toggleMobileMenu() {
-  //     this.isMobileMenuOpen = !this.isMobileMenuOpen;
-  //   }
-  // }
 };
 </script>
-
-<!-- <style>
-.slide-enter-active {
-  transition: transform 0.3s ease-in-out;
-}
-
-.slide-enter-to {
-  transform: translateX(0);
-}
-
-.slide-leave-active {
-  transition: transform 0.3s ease-in-out;
-}
-
-.slide-leave-to {
-  transform: translateX(100%);
-}
-</style> -->

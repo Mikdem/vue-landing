@@ -14,22 +14,25 @@
     <form @submit.prevent="loginUser" class="flex flex-col items-center max-w-[400px] mx-auto md:my-8 bg-white text-left font-Poppins px-12 py-10 rounded-lg shadow-lg">
       <h2 class="text-3xl text-bluePrimary font-black self-start">Login</h2>
       <p class="text-base self-start my-2">Please login to your account</p>
-      <!-- <label class="text-bluePrimary text-xs self-start font-semibold mt-[25px] mb-3 uppercase tracking-wide">Email:</label> -->
-      <input type="email" placeholder="Username or Email" required v-model="email" class="p-2 mt-[15px] bg-lightGrey block w-full border-b border-bluePrimary focus:outline-none mb-[10px] rounded-lg focus:border-orangePrimary">
-  
-      <!-- <label class="text-bluePrimary text-xs self-start font-semibold mt-[25px] mb-3 uppercase tracking-wide">Password:</label> -->
-      <input :type="showPassword ? 'text' : 'password'" placeholder="Password" required v-model="password" class="p-2 mt-[15px] block bg-lightGrey w-full border-b border-bluePrimary rounded-lg focus:outline-none focus:border-orangePrimary">
-      <!-- <span class="absolute inset-y-0 left-0 flex items-center pl-2 text-orangePrimary">
-      <i
-        class="cursor-pointer fas"
-        :class="showPassword ? 'fa-eye-slash' : 'fa-eye'"
-        @click="showPassword = !showPassword"
-      ></i>
-    </span> -->
+        <!--Email Section-->
+      <div class="relative w-full">
+      <input type="email" placeholder="Email Address" required v-model="email" class="p-2 mt-[15px] bg-lightGrey block w-full border-b border-bluePrimary focus:outline-none mb-[10px] rounded-lg focus:border-orangePrimary">
+      <span class="absolute inset-y-0 right-0 flex items-center pr-3">
+        <i class="fa fa-envelope-o text-orangePrimary font-black text-[20px] pt-2 cursor-pointer"></i>
+      </span>
+      </div>
+        <!--Password Section-->
+      <div class="relative w-full">
+      <input :type="showPassword ? 'text' : 'password'" placeholder="Password" required v-model="password" class="p-2 mt-[15px] block bg-lightGrey w-full border-b border-bluePrimary rounded-lg focus:outline-none focus:border-orangePrimary pr-[40px]">
+      <span class="absolute inset-y-0 right-0 flex items-center pr-3">
+        <i @click="showPassword = !showPassword" :class="showPassword ? 'fa fa-eye' : 'fa fa-eye-slash' " class="text-orangePrimary text-[20px] font-black pt-4 cursor-pointer"></i>
+      </span>
+      </div>
+        <!--Error Message-->
+      <p v-if="errorMessage" class="text-red text-[16px] py-2">{{ errorMessage }}</p>
+        <!--Button-->
       <button type="submit" class="mt-[25px] mb-[30px] text-white bg-orangePrimary py-[10px] w-full p-2 mb-2 bg-5BA4A4 text-white border border-5BA4A4 rounded-lg hover:bg-63BABA transition duration-300 ease-in-out">Login</button>
-     <!-- <p v-if="errorMessage" style="color: red;">{{ errorMessage }}</p>-->
-      <!-- <error-modal :is-visible="isErrorModalVisible" :error-message="errorMessage" @close="closeErrorModal"></error-modal> -->
-      <p class="text-center"><a href="/register">Register</a> | <a>Forgot your Password?</a></p>
+      <p class="text-center"><a href="/register" class="underline">Register</a> | <a class="underline">Forgot your Password?</a></p>
     </form>
   </template>
 

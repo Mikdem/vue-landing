@@ -21,20 +21,21 @@
           'text-bluePrimary': scrolled
         }"
          class="hidden text-white md:flex items-center space-x-8 pt-4">
-          <a href="/" class="nav-link">Home</a>
-          <a href="/about" class="nav-link">Jobs</a>
-          <a href="/login" class="nav-link bg-orangePrimary py-2 px-4" :class="{'bg-orangePrimary': scrolled, 'text-white': scrolled}">Login</a>
-          <a href="/register" class="nav-link bg-orangePrimary py-2 px-4" :class="{'bg-orangePrimary': scrolled, 'text-white': scrolled}">Register</a>
+          <a href="/" class="hover:text-orangePrimary" :class="{'text-bluePrimary': scrolled}">Home</a>
+          <a href="/about" class="hover:text-orangePrimary" :class="{'text-bluePrimary': scrolled}">Jobs</a>
+          <a href="/login" class="bg-orangePrimary py-2 px-4" :class="{'bg-orangePrimary': scrolled, 'text-white': scrolled}">Login</a>
+          <a href="/register" class="bg-orangePrimary py-2 px-4" :class="{'bg-orangePrimary': scrolled, 'text-white': scrolled}">Register</a>
         </div>
         <!-- Mobile menu button -->
         <div class="md:hidden">
           <button
             @click="toggleMobileMenu"
-            :class="{'bg-orangePrimary': scrolled, 'text-white': scrolled}"
             class="text-gray-600 focus:outline-none focus:text-gray-800 bg-white p-2 rounded-full"
+            :class="{'bg-orangePrimary': scrolled, 'text-white': scrolled}"
           >
             <svg
               class="h-6 w-6"
+              :class="{'bg-orangePrimary': scrolled, 'text-white': scrolled}"
               fill="none"
               stroke-linecap="round"
               stroke-linejoin="round"

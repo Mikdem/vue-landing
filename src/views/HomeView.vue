@@ -43,7 +43,7 @@
           <button class="mt-4 bg-orangePrimary max-w-max text-white text-[16px] font-bold font-poppins py-[10px] px-[30px] hover:bg-opacity-90 transition duration-300">Job Listing</button>
         </div>
         <!--How to get Started-->
-        <div class="bg-lightGrey py-8 px-6 md:px-30 font-Poppins text-lightBlack">
+        <div class="bg-lightGrey py-10 px-6 md:px-30 font-Poppins text-lightBlack">
           <h1 class="m-4 text-black md:text-[42px] text-[24px] text-center font-Poppins font-black leading-tight md:leading-normal">How to Get <span class="text-orangePrimary">Started</span></h1>
           <div class="flex md:flex-row flex-col">
             <!-- card 1 -->
@@ -95,18 +95,50 @@
          </div>
     </div>
     <!--FAQ Section-->
-    <div class=""> 
       <faqHome/>
+    <!--MMCY Number Section-->
+    <div class="bg-[url('../assets/trans-pattern.png')] bg-center bg-[#192030] py-24 px-6 md:px-36 font-Poppins flex flex-col md:flex-row justify-around">
+      <div class="w-full"> 
+        <p class="text-white font-bold text-[15px] md:text-[18px] pt-2 md:pt-6 pb-4 md:px-0 px-6">Find</p>
+        <h1 class="text-[24px] font-black text-white md:text-[42px] md:px-0 px-6">Your Dream <span class="text-orangePrimary">Job Here</span></h1>
+        <div class="flex flex-col md:flex-row"> 
+          <a href="/register" class="bg-orangePrimary text-white text-[16px] flex justify-center m-6 font-bold font-poppins py-[15px] px-[35px] hover:bg-opacity-90 transition duration-300">
+                        Join Our Talent Pool
+          </a>
+          <a href="/register" class="bg-orangePrimary text-white text-[16px] flex justify-center m-6 font-bold font-poppins py-[15px] px-[35px] hover:bg-opacity-90 transition duration-300">
+                        View Job Listing
+          </a>
+        </div>
+      </div>
+      <div class="justify-end"> 
+        <numberMmcy />
+      </div>
+    </div>
+    <!--Contact Us Section-->
+    <div class="md:px-36 font-Poppins flex flex-col md:flex-row justify-around">
+      <div class="flex flex-col px-[15px] pt-[35px]"> 
+        <h4 class="pb-2 pt-2 md:pr-2 text-[24px] md:text-[42px] text-black md:text-left font-black">Our <span class="text-orangePrimary">Team</span></h4>
+        <div class=""> 
+          <img src="../assets/HR-Team-2.0.jpg" class="md:px-0 py-4 md:py-4">
+        </div>
+      </div>
+      <div> 
+        <contactUs />
+      </div>
     </div>
 </template>
 
 <script>
 import '../assets/tailwind.css';
 import faqHome from '../components/faqHome.vue';
+import numberMmcy from '../components/numberMmcy.vue'
+import contactUs from '../components/contactUs.vue'
 
 export default {
   components: {
     faqHome,
+    numberMmcy,
+    contactUs,
   },
 };
 </script>
