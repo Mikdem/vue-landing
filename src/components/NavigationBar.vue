@@ -35,7 +35,7 @@
           >
             <svg
               class="h-6 w-6"
-              :class="{'bg-orangePrimary': scrolled, 'text-white': scrolled}"
+              :class="{'bg-orangePrimary': scrolled, 'text-white': scrolled, 'p-2': scrolled, 'rounded-full': scrolled, 'h-10': scrolled, 'w-10': scrolled} "
               fill="none"
               stroke-linecap="round"
               stroke-linejoin="round"

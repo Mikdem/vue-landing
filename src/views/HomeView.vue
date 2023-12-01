@@ -5,9 +5,9 @@
       <div class="px-4 py-40 md:pt-80 md:pl-96 md:pb-24 md:pr-4 ">
         <h1 class="md:text-[80px] text-[50px] font-bold">Apply Now</h1>
         <p class="text-xl mb-4 pt-2">Take your Career to New Heights</p>
-        <button class="bg-orangePrimary text-white md:text-[20px] text-[30px] font-bold font-poppins py-4 px-6 hover:bg-opacity-90 transition duration-300">
+        <a href="/register" class="bg-orangePrimary text-white md:text-[20px] text-[30px] font-bold font-poppins py-4 px-6 hover:bg-opacity-90 transition duration-300">
           Join us
-        </button>
+        </a>
       </div>
     </header>
 </div>
@@ -26,9 +26,9 @@
                         So what are you waiting for?<br><br>
                         Register now to gain experience working with international clients.
                     </p>
-                    <button class="bg-orangePrimary text-white text-[16px] flex justify-center m-6 font-bold font-poppins py-4 px-6 hover:bg-opacity-90 transition duration-300">
+                    <a href="/register" class="bg-orangePrimary text-white text-[16px] flex justify-center m-6 font-bold font-poppins py-4 px-6 hover:bg-opacity-90 transition duration-300">
                         Join Our Talent Pool
-                    </button>
+                    </a>
                     </div>
                 </div> 
                 <div class="md:w-1/2"> 
@@ -119,7 +119,7 @@
       <div class="flex flex-col px-[15px] pt-[35px]"> 
         <h4 class="pb-2 pt-2 md:pr-2 text-[24px] md:text-[42px] text-black md:text-left font-black">Our <span class="text-orangePrimary">Team</span></h4>
         <div class=""> 
-          <img src="../assets/HR-Team-2.0.jpg" class="md:px-0 py-4 md:py-4">
+          <img src="../assets/HR-Team-2.0.jpg" class="md:px-0 py-4 md:pt-4">
         </div>
       </div>
       <div> 

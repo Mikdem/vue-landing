@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-lightGrey pb-4">
+    <div class="bg-lightGrey pb-0 md:pb-4">
     <div class="bg-[url('../assets/MMCY-Tech-Job_section-1.png')] md:bg-left-top bg-center">
     <!-- Banner header -->
     <header class=" text-white text-center py-8 h-full space-y-4 justify-items-end">
